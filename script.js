@@ -7,11 +7,11 @@ function generateButtons() {
   for(i = 0; i < numberofbuttons; ++i) {
     const button = document.createElement('button');
     myprize.push("Loser !");
-      button.className = "btn btn-warning btn-lg btn-block border-light text-dark";
-      document.body.appendChild(button);
-      button.addEventListener('click', () => {
-        prize(myprize);
-      }, {once : true});
+    button.className = "btn btn-warning btn-lg btn-block border-light text-dark";
+    document.body.appendChild(button);
+    button.addEventListener('click', () => {
+       prize(myprize);
+    }, {once : true});
   }
   myprize.pop();
 }
